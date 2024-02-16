@@ -1,5 +1,6 @@
 import "./App.css";
 import { Home } from "./Home";
+import { Registration } from "./Registration";
 
 // 2 types of components in React:
 // 1. Class components
@@ -7,7 +8,7 @@ import { Home } from "./Home";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Registration />
     </div>
   );
 }
