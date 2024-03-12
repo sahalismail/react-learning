@@ -1,0 +1,11 @@
+.users-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.user {
+  width: 300px;
+  background: #dbdbdb;
+}
