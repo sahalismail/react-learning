@@ -33,6 +33,8 @@ export const Registration = () => {
     name: "",
     age: "",
     address: "",
+    gender: "",
+    email: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -78,6 +80,30 @@ export const Registration = () => {
             <span className="error-message">Please enter address</span>
           )}
         </div>
+        <div className="field-wrapper">
+          <label>Gender</label>
+          <label for="male">Male</label>
+          <input type="radio" value="male"/>
+          <label for="female">Female</label>
+          <input type="radio" value="female"
+          name="gender"
+          onChange={handleChange}
+          />
+          {!user.gender && isSubmitted && (
+            <span className="error-message">please select your gender</span>
+          )}
+          </div>
+          <div className="field-wrapper">
+            <label>E-mail</label>
+            <input type="text"
+            placeholder="Enter email"
+            name="email"
+            onChange={handleChange}
+            />
+            {!user.email && isSubmitted &&(
+              <span className="error-message">please enter your valid email</span>
+            )}
+          </div>
         <button onClick={onSubmit}>Submit</button>
       </form>
     </div>
