@@ -10,7 +10,8 @@ import { ColorList } from "./ColorList";
 function App() {
   return (
     <div className="App">
-      <ColorList />
+      {/* <ColorList /> */}
+      <UsersList />
     </div>
   );
 }
