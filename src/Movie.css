@@ -1,0 +1,47 @@
+html{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    margin-left: -1215px;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 102%;
+}
+
+.user-wrapper{
+    background-color: black;
+}
+
+.user h3{
+    color: white;
+    margin: -4px 0px 0px -165px;
+    font-size: 12px;
+}
+
+
+.user img{
+    width: 235px;
+  }
+
+
+  @media screen and (max-width: 431px) {
+    .user img{
+        width: 430px;
+        height: 846px;
+    }
+    
+  }
+
+  @media screen and(max-width: 1024) {
+    .section{
+        margin-left: 40px;
+    }
+    
+  }
