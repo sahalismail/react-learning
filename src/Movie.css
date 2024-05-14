@@ -35,9 +35,9 @@ img{
 
   @media screen and (max-width: 768px) {
    .user {
-       /* flex: calc(100% / 3); */
+       flex: calc(100% / 3);
        /* flex: 25.33%; */
-       flex: 194px;
+       /* flex: 194px; */
    }
 
    h1{
@@ -46,7 +46,7 @@ img{
     
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) and (min-width:769px){
     .user {
         flex: 25%;
     }
