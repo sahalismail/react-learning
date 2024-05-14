@@ -30,11 +30,11 @@ export const Movie =() => {
       <div className="wrapper">
         {movieData?.map((movie) => (
             <div className="user" key={movie.id}>
-                <div className="user-wrapper">
+                
                 <img src={ ["https://www.amalmk.com/mock-api/movie-streaming/images/"]+movie["poster-image"]}/>
                 <h3>{`${movie.name}`}</h3>
                 </div>
-            </div>
+            
         ))}
       </div>
     </section>            

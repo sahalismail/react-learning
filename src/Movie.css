@@ -1,5 +1,5 @@
 html{
-    background-color: black;
+    background-color: #171717;
 }
 
 h1{
@@ -11,37 +11,52 @@ h1{
 .wrapper{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
-    width: 102%;
+    background-color: #171717;
+   
 }
-
-.user-wrapper{
-    background-color: black;
-}
+ .user{
+    flex: 15%;
+    background-color:#171717 ;
+    
+ }
 
 .user h3{
     color: white;
-    margin: -4px 0px 0px -165px;
+    margin: -20px -30px 26px -169px;
     font-size: 12px;
 }
 
 
-.user img{
-    width: 235px;
+img{
+    width: 100%;
+    padding: 16px;
   }
 
 
-  @media screen and (max-width: 431px) {
-    .user img{
-        width: 430px;
-        height: 846px;
-    }
+  @media screen and (max-width: 768px) {
+   .user {
+       flex: calc(100% / 3);
+   }
+
+   h1{
+    margin-left: 0px;
+   }
     
   }
 
-  @media screen and(max-width: 1024) {
-    .section{
-        margin-left: 40px;
+  @media screen and (max-width: 1024px) {
+    .user {
+        flex: 25%;
     }
-    
+
+    h1{
+        margin-left: 0px;
+    }
+
+    .user h3{
+        margin: -20px -30px 26px -132px;
+    }
+  
   }
+
+  
